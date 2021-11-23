@@ -1,0 +1,2 @@
+class GetSome < ApplicationRecord
+end

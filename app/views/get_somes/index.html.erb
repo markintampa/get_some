@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Get Somes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @get_somes.each do |get_some| %>
+      <tr>
+        <td><%= link_to 'Show', get_some %></td>
+        <td><%= link_to 'Edit', edit_get_some_path(get_some) %></td>
+        <td><%= link_to 'Destroy', get_some, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Get Some', new_get_some_path %>
